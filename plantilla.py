@@ -1,5 +1,5 @@
 ################
-# Martín René - @martinvilu
+# Ezequiel Sebastian Navone - @harrypooter3
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
