@@ -3,6 +3,9 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+class IngresoIncorrecto(Exception):
+    """Esta es la Excepcion para el ingreso incorrecto"""
+    pass
 
 def division_lenta(dividendo, divisor):
     if (dividendo > 0 and divisor > 0):
@@ -14,7 +17,7 @@ def division_lenta(dividendo, divisor):
         print(f" El cociente es igual a {cociente}")
         print(f" El resto es {resto}")
     else:
-        print("Error, ambos numeros deben ser mayores que 0")
+        raise IngresoIncorrecto("No ingresaste un numero correcto")
         
 def prueba():
     print("Ingresar dos numeros para hacer la resta")
