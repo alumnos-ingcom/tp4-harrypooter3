@@ -16,19 +16,27 @@ def lista_aleatoria(cantidad, minimo, maximo):
     return lista
         
 def minimo(lista):
-    numminimo = lista[0]
+    num_minimo = lista[0]
     for j in lista:
-        if (numminimo > j):
-            numminimo = j
-    print(f"{numminimo} es el menor numero de la lista")
+        if (num_minimo >  j):
+            num_minimo = j
+    return num_minimo
+    
 def maximo(lista):
-    pass
+    num_maximo = lista[0]
+    for i in lista:
+        if (num_maximo < i):
+            num_maximo = i
+    return num_maximo
         
 def prueba():
     cantidad = int(input("Cantidad de numeros: "))
     rangomin = int(input("Rango Minimo: "))
     rangomax = int(input("Rango Maximo (superior al rango minimo): "))
-    print (lista_aleatoria(cantidad,rangomin,rangomax))
-    print (minimo)
+    lista = lista_aleatoria(cantidad, rangomin, rangomax)
+    print(lista)
+    print(f"El menor numero es {minimo(lista)}")
+    print(f"El mayor numero es {maximo(lista)}")
+    
 if __name__ == "__main__":
     prueba()
