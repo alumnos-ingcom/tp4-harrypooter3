@@ -14,8 +14,7 @@ def division_lenta(dividendo, divisor):
         while resto >= divisor:
             resto = resto - divisor
             cociente = cociente +1
-        print(f" El cociente es igual a {cociente}")
-        print(f" El resto es {resto}")
+        return(f" El cociente es igual a {cociente} y el resto es {resto}")
     else:
         raise IngresoIncorrecto("No ingresaste un numero correcto")
         
