@@ -6,18 +6,18 @@
 
 
 def convertir_a_fahrrenheit(centigrados):
-    grados = (float(input("Ingresar grados (en formato de numero) para convertir a fahrrenheit: ")))
-    conversion = (grados * 9/5) + 32
-    print(f" Convertiste {grados} grados centigrados a {conversion} grados fahrrenheit")
+    conversion = (int(centigrados * 9/5)) + 32
+    return(f" Convertiste {centigrados} grados centigrados a {conversion} grados fahrrenheit")
     
 def convertir_a_centigrados(fahrenheit):
-    grados = (float(input("Ahora ingresar grados fahrrenheit para convertir a centigrados: ")))
-    conversion = (grados -32) * 5/9
-    print(f" Convertiste {grados} grados centigrados a {conversion} grados fahrrenheit")
+    conversion = (fahrenheit -32) * 5/9
+    return(f" Convertiste {fahrenheit} grados centigrados a {conversion} grados fahrrenheit")
     
 def prueba():
-    print(convertir_a_fahrrenheit("Ingresar grados centigrados"))
-    print(convertir_a_centigrados("Ingresar grados fahrrenheit"))
+    centigrados = (float(input("Ingresar grados (en formato de numero) para convertir a fahrrenheit: ")))
+    fahrenheit = (float(input("Ahora ingresar grados fahrrenheit para convertir a centigrados: ")))
+    print(convertir_a_fahrrenheit(centigrados))
+    print(convertir_a_centigrados(fahrenheit))
     
 
 if __name__ == "__main__":
