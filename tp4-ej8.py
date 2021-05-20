@@ -3,6 +3,7 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+from tp4_ej1 import ingreso_entero
 
 def ordenar_mayor_a_menor(uno, dos, tres):
     lista = list()

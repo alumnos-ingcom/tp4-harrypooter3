@@ -3,7 +3,7 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
+from tp4_ej1 import IngresoIncorrecto
 def es_primo(numero):
     numero = int(input("Ingresar un numero entero positivo para saber si es primo o no: "))
     divisor = 2
@@ -17,7 +17,7 @@ def es_primo(numero):
         else:
             return False
             contador = numero
-    return("El numero ingresado tiene que ser mayor a 0")
+    raise IngresoIncorrecto("El numero ingresado tiene que ser mayor a 0")
         
 def prueba():
     print (es_primo("Ingresar un numero"))

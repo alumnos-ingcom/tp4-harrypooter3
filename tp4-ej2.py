@@ -13,12 +13,14 @@ def suma_lenta(numero, otro_numero):
             temporal = temporal + 1
         except:
             break
-    return(f"La suma entre el numero {numero} y {otro_numero} da como resultado {temporal}")
+    return temporal
 
 def prueba():
     numero = (int(input("ingrese un numero entero: ")))
     otro_numero = (int(input("ingrese un segundo numero entero: ")))
-    print(suma_lenta(numero, otro_numero))
+    print(suma_lenta(numero,otro_numero))
+
+
 
 
 if __name__ == "__main__":
